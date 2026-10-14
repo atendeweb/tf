@@ -17,6 +17,56 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
 
     <style>
+
+
+        /* Logos de clientes no rodapé */
+.clientes {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,.12);
+}
+.clientes-titulo {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 20px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    opacity: .9;
+}
+.client-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 28px 40px;
+}
+.client-logo a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    transition: .25s;
+    filter: brightness(0) invert(1); /* deixa logos brancos no fundo escuro */
+}
+.client-logo a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    filter: brightness(0) invert(1) drop-shadow(0 0 6px rgba(255,180,0,.5));
+}
+.client-logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+@media (max-width: 560px) {
+    .client-logo { gap: 20px 28px; }
+    .client-logo img { height: 32px; }
+}
+
+
         :root {
             --roxo: #5b1a8b;
             --roxo-escuro: #2d0a47;
@@ -257,41 +307,69 @@
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="grid g4">
-                <div>
-                    <h4>Tudo Festas</h4>
-                    <p>Aqui, tudo vira festa!<br>Coffee break, buffet e estrutura para eventos.</p>
-                </div>
-                <div>
-                    <h4>Serviços</h4>
-                    <ul>
-                        <li><a href="./#coffee-break">Coffee Break</a></li>
-                        <li><a href="./#servicos">Buffet para Eventos</a></li>
-                        <li><a href="./#estrutura">Palco, Som e Luz</a></li>
-                        <li><a href="./#estrutura">Painel de LED</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Cidades Atendidas</h4>
-                    <ul>
-                        <li>Salvador</li>
-                        <li>Feira de Santana</li>
-                        <li>Região Metropolitana</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contato</h4>
-                    <ul>
-                        <li><a href="https://wa.me/5511911894023" target="_blank" rel="noopener">WhatsApp</a></li>
-                        <li>www.tudofestas.com.br</li>
-                    </ul>
-                </div>
+<!-- Logos de clientes -->
+        <div class="clientes">
+            <h3 class="clientes-titulo">Empresas que já servimos</h3>
+            <div class="client-logo">
+                <a href="https://es.wikipedia.org/wiki/Nestl%C3%A9" target="_blank" rel="noopener">
+                    <img src="./image/logos/1.jpg" height="40" alt="Evento realizado para Nestlé">
+                </a>
+                <a href="https://pt.wikipedia.org/wiki/Petrobras" target="_blank" rel="noopener">
+                    <img src="./image/logos/petrobras.png" height="40" alt="Evento realizado para Petrobras">
+                </a>
+                <a href="https://es.wikipedia.org/wiki/Bayer" target="_blank" rel="noopener">
+                    <img src="./image/logos/2.jpg" height="40" alt="Evento realizado para Bayer">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/SENAI" target="_blank" rel="noopener">
+                    <img src="./image/logos/3.jpg" height="40" alt="Evento realizado para SENAI">
+                </a>
+                <a target="_blank" rel="noopener">
+                    <img src="./image/logos/4.jpg" height="40" alt="Evento realizado">
+                </a>
+                <a target="_blank" rel="noopener">
+                    <img src="./image/logos/Ferreira.jpg" height="40" alt="Evento realizado para Ferreira Costa">
+                </a>
             </div>
-            <div class="copy">© <span id="ano"></span> Tudo Festas - Todos os direitos reservados.</div>
         </div>
-    </footer>
+
+   <footer>
+    <div class="container">
+        <div class="grid g4">
+            <div>
+                <h4>Tudo Festas</h4>
+                <p>Aqui, tudo vira festa!<br>Coffee break, buffet e estrutura para eventos.</p>
+            </div>
+            <div>
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="./#coffee-break">Coffee Break</a></li>
+                    <li><a href="./#servicos">Buffet para Eventos</a></li>
+                    <li><a href="./#estrutura">Palco, Som e Luz</a></li>
+                    <li><a href="./#estrutura">Painel de LED</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Cidades Atendidas</h4>
+                <ul>
+                    <li>Salvador</li>
+                    <li>Feira de Santana</li>
+                    <li>Região Metropolitana</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="https://wa.me/5511911894023" target="_blank" rel="noopener">WhatsApp</a></li>
+                    <li>www.tudofestas.com.br</li>
+                </ul>
+            </div>
+        </div>
+
+        
+
+        <div class="copy">© <span id="ano"></span> Tudo Festas - Todos os direitos reservados.</div>
+    </div>
+</footer>
 
     <a class="wpp-fixo" href="https://tudofestas.com.br/orcamento/index.html" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" style="display:none;">💬</a>
     <!-- <a class="wpp-fixo" href="https://wa.me/5511911894023" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" style="display:none;">💬</a> -->

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Orçamento de Coffee Break, Buffet e Estrutura para Eventos | Tudo Festas</title>
+    <meta name="description" content="Peça seu orçamento de coffee break, buffet, palco, som, luz e painel de LED em Salvador e Feira de Santana. Preencha o formulário e receba nossa proposta.">
+    <link rel="canonical" href="https://www.tudofestas.com.br/orcamento.html">
+    <meta property="og:title" content="Solicitar Orçamento - Tudo Festas">
+    <meta property="og:description" content="Aqui, tudo vira festa! Peça seu orçamento de coffee break, buffet e estrutura para eventos.">
+    <meta property="og:url" content="https://www.tudofestas.com.br/orcamento.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="theme-color" content="#5b1a8b">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --roxo: #5b1a8b;
+            --roxo-escuro: #2d0a47;
+            --rosa: #e6397d;
+            --dourado: #ffb400;
+            --creme: #fff7ef;
+            --texto: #2a2a2a;
+        }
+        * { box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; margin: 0; color: var(--texto); background: #fff; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+        .grid { display: grid; gap: 24px; }
+        .g4 { grid-template-columns: repeat(4, 1fr); }
+        @media (max-width: 900px) { .g4 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 560px) { .g4 { grid-template-columns: 1fr; } }
+
+        .btn { display: inline-block; background: var(--rosa); color: #fff; font-weight: 700; padding: 12px 28px; border-radius: 40px; transition: .25s; border: 0; cursor: pointer; font-family: inherit; font-size: 1rem; }
+        .btn:hover { background: #c92868; transform: translateY(-2px); }
+        .btn-lg { padding: 16px 38px; font-size: 1.1rem; }
+
+        .topbar { background: var(--roxo-escuro); }
+        .topbar .container { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; gap: 16px; flex-wrap: wrap; }
+        .brand { color: #fff; font-weight: 800; font-size: 1.5rem; letter-spacing: -.5px; }
+        .brand span { color: var(--dourado); }
+        .nav { display: flex; gap: 22px; }
+        .nav a { color: #e9d8f7; font-size: .92rem; font-weight: 600; }
+        .nav a:hover { color: var(--dourado); }
+        @media (max-width: 760px) { .nav { display: none; } }
+
+        .hero { background: linear-gradient(135deg, var(--roxo-escuro) 0%, var(--roxo) 55%, var(--rosa) 130%); color: #fff; padding: 56px 0 64px; text-align: center; }
+        .hero .slogan { font-weight: 800; color: var(--dourado); font-size: 1.15rem; margin-bottom: 6px; }
+        .hero h1 { font-size: clamp(1.8rem, 4.5vw, 2.8rem); line-height: 1.15; margin: 0 0 12px; font-weight: 800; }
+        .hero p { max-width: 620px; margin: 0 auto; color: #f1e4fb; }
+
+        /* Formulário */
+        .form-wrap { background: #f3ecfa; padding: 50px 0 70px; }
+        .form-box { max-width: 720px; margin: -90px auto 0; background: linear-gradient(180deg, #3a14c4 0%, var(--roxo) 100%); color: #fff; border-radius: 22px; padding: 38px 34px 42px; box-shadow: 0 16px 40px rgba(45,10,71,.35); position: relative; }
+        @media (max-width: 560px) { .form-box { padding: 28px 20px 34px; margin-top: -60px; } }
+        .form-box h2 { margin: 0 0 4px; font-size: 1.5rem; font-weight: 800; }
+        .form-box .intro { margin: 0 0 24px; color: #dccbf5; font-size: .92rem; }
+        .campo { margin-bottom: 18px; }
+
+        /* Linhas com campos lado a lado */
+        .linha { display: grid; gap: 16px; margin-bottom: 18px; }
+        .linha-2 { grid-template-columns: 1fr 1fr; }
+        .linha-3 { grid-template-columns: 1fr 1fr 1fr; }
+        @media (max-width: 560px) {
+            .linha-2, .linha-3 { grid-template-columns: 1fr; gap: 18px; }
+        }
+
+        .campo > label, .grupo-titulo { display: block; font-weight: 700; font-size: .92rem; margin-bottom: 6px; }
+        .campo input[type=text], .campo input[type=email], .campo input[type=tel], .campo input[type=datetime-local], .campo textarea {
+            width: 100%; background: #fff; border: 1px solid #cfc2e6; border-radius: 22px; padding: 11px 18px; font-family: inherit; font-size: .98rem; color: #222; outline: none; transition: .2s;
+        }
+        .campo textarea { border-radius: 18px; min-height: 80px; resize: vertical; }
+        .campo input:focus, .campo textarea:focus { border-color: var(--dourado); box-shadow: 0 0 0 3px rgba(255,180,0,.35); }
+
+        /* Container de opções (checkbox e radio) lado a lado */
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+
+/* No mobile, vira grade de 2 colunas */
+@media (max-width: 560px) {
+    .opcoes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px 14px;
+    }
+}
+
+/* Ajuste na opção individual */
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0;
+    cursor: pointer;
+    font-size: .92rem;
+    color: #e9defa;
+    line-height: 1.2;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+.opcao input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    flex: 0 0 20px;
+    cursor: pointer;
+    transition: .15s;
+    margin: 0;
+}
+
+.opcao input[type=checkbox] {
+    border-radius: 6px;
+}
+
+.opcao input:checked {
+    background: var(--dourado);
+    box-shadow: inset 0 0 0 4px #fff;
+}
+
+.opcao:hover {
+    color: #fff;
+}
+
+        .erro { color: #ffd0e0; font-size: .85rem; margin: 6px 0 0; min-height: 1.2em; }
+        .acoes { margin-top: 26px; }
+        .nota { margin-top: 14px; font-size: .8rem; color: #cdb7e0; }
+        .hp { position: absolute; left: -9999px; }
+
+        footer { background: var(--roxo-escuro); color: #cdb7e0; padding: 50px 0 24px; font-size: .92rem; }
+        footer h4 { color: #fff; margin: 0 0 12px; }
+        footer ul { list-style: none; padding: 0; margin: 0; }
+        footer li { padding: 3px 0; }
+        footer a:hover { color: var(--dourado); }
+        .copy { border-top: 1px solid rgba(255,255,255,.12); margin-top: 30px; padding-top: 18px; text-align: center; font-size: .82rem; }
+        .wpp-fixo {display:none;     position: fixed; right: 18px; bottom: 18px; background: #25d366; color: #fff; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.9rem; box-shadow: 0 6px 16px rgba(0,0,0,.3); z-index: 99; }
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <a class="brand" href="./">Tudo<span>Festas</span></a>
+            <nav class="nav">
+                <a href="./#servicos">Serviços</a>
+                <a href="./#coffee-break">Coffee Break</a>
+                <a href="./#estrutura">Estrutura</a>
+                <a href="./#faq">Dúvidas</a>
+            </nav>
+            <a class="btn" href="https://tudofestas.com.br/orcamento/index.html" target="_blank" rel="noopener">WhatsApp</a>
+            <!--<a class="btn" href="https://wa.me/5511911894023" target="_blank" rel="noopener">WhatsApp</a>-->
+        </div>
+    </div>
+
+    <header class="hero">
+        <div class="container">
+            <div class="slogan">Aqui, tudo vira festa!</div>
+            <h1>Solicite seu Orçamento</h1>
+            <p>Conte um pouco sobre o seu evento de coffee break, buffet, palco, som, luz ou painel de LED em Salvador e Feira de Santana. Retornamos com uma proposta.</p>
+        </div>
+    </header>
+
+    <main class="form-wrap">
+        <div class="container">
+            <form class="form-box" id="form-orcamento" novalidate>
+                <h2>Dados do evento</h2>
+                <p class="intro">Campos com * são obrigatórios. Ao enviar, abriremos o WhatsApp com o seu pedido pronto.</p>
+
+                <input type="text" name="empresa_site" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <div class="campo">
+                    <label for="nome">Nome / Organização *</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </div>
+
+                <div class="linha linha-2">
+                    <div class="campo">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone/WhatsApp *</label>
+                        <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(75) 90000-0000" required>
+                    </div>
+                </div>
+
+                <div class="linha linha-2">
+                    <div class="campo">
+                        <label for="cidade">Cidade *</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Salvador, Feira de Santana..." required>
+                    </div>
+                    <div class="campo">
+                        <label for="data">Data e hora *</label>
+                        <input type="datetime-local" id="data" name="data" required>
+                    </div>
+                </div>
+
+<div class="campo">
+    <span class="grupo-titulo">Serviços desejados *</span>
+    <div class="opcoes">
+        <label class="opcao"><input type="checkbox" name="servicos" value="Coffee break"> Coffee break</label>
+        <label class="opcao"><input type="checkbox" name="servicos" value="Buffet"> Buffet</label>
+        <label class="opcao"><input type="checkbox" name="servicos" value="Estrutura de palco"> Palco</label>
+        <label class="opcao"><input type="checkbox" name="servicos" value="Som e luz"> Som e luz</label>
+        <label class="opcao"><input type="checkbox" name="servicos" value="Painel de LED"> Painel de LED</label>
+    </div>
+</div>
+                <div class="linha linha-2">
+                    <div class="campo">
+    <span class="grupo-titulo">Quantas pessoas no evento? *</span>
+    <div class="opcoes">
+        <label class="opcao"><input type="radio" name="pessoas" value="25 a 50 pessoas"> 25 a 50</label>
+        <label class="opcao"><input type="radio" name="pessoas" value="60 a 120 pessoas"> 60 a 120</label>
+        <label class="opcao"><input type="radio" name="pessoas" value="150 a 300 pessoas"> 150 a 300</label>
+        <label class="opcao"><input type="radio" name="pessoas" value="350 a 600 pessoas"> 350 a 600</label>
+        <label class="opcao"><input type="radio" name="pessoas" value="Mais de 600 pessoas"> +600</label>
+    </div>
+</div>
+                   <div class="campo">
+    <span class="grupo-titulo">Duração do evento</span>
+    <div class="opcoes">
+        <label class="opcao"><input type="radio" name="duracao" value="Até 2 horas"> Até 2 horas</label>
+        <label class="opcao"><input type="radio" name="duracao" value="Meio período (3 a 4 horas)"> Meio período</label>
+        <label class="opcao"><input type="radio" name="duracao" value="Dia inteiro"> Dia inteiro</label>
+    </div>
+</div>
+                </div>
+
+                <div class="linha linha-2">
+                    <div class="campo">
+                        <label for="tema">Tema ou tipo do evento</label>
+                        <input type="text" id="tema" name="tema" placeholder="Treinamento, formatura...">
+                    </div>
+                    <div class="campo">
+                        <label for="obs">Deseja acrescentar algo?</label>
+                        <textarea id="obs" name="obs" placeholder="Local, restrições alimentares..."></textarea>
+                    </div>
+                </div>
+
+                <p class="erro" id="erro" role="alert"></p>
+
+                <div class="acoes">
+                    <button type="submit" class="btn btn-lg">Solicitar orçamento</button>
+                    <p class="nota">Seus dados são usados apenas para responder ao seu pedido.</p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="grid g4">
+                <div>
+                    <h4>Tudo Festas</h4>
+                    <p>Aqui, tudo vira festa!<br>Coffee break, buffet e estrutura para eventos.</p>
+                </div>
+                <div>
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="./#coffee-break">Coffee Break</a></li>
+                        <li><a href="./#servicos">Buffet para Eventos</a></li>
+                        <li><a href="./#estrutura">Palco, Som e Luz</a></li>
+                        <li><a href="./#estrutura">Painel de LED</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Cidades Atendidas</h4>
+                    <ul>
+                        <li>Salvador</li>
+                        <li>Feira de Santana</li>
+                        <li>Região Metropolitana</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5511911894023" target="_blank" rel="noopener">WhatsApp</a></li>
+                        <li>www.tudofestas.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">© <span id="ano"></span> Tudo Festas - Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <a class="wpp-fixo" href="https://tudofestas.com.br/orcamento/index.html" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" style="display:none;">💬</a>
+    <!-- <a class="wpp-fixo" href="https://wa.me/5511911894023" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" style="display:none;">💬</a> -->
+<script>
+var WHATSAPP = '5511911894023';
+var MC_ENDPOINT = 'https://online.us20.list-manage.com/subscribe/post?u=f157af6dee86a498a2a97fa19&id=075a266628&f_id=009ec3e1f0';
+
+document.getElementById('ano').textContent = new Date().getFullYear();
+
+// Mapeia valores dos seus radios para as choices exatas do Mailchimp
+var MAPA_PESSOAS = {
+  '25 a 50 pessoas':     '25 a 45',
+  '60 a 120 pessoas':    '50 a 80',
+  '150 a 300 pessoas':   '100 a 150',
+  '350 a 600 pessoas':   '180 ou mais',
+  'Mais de 600 pessoas': '180 ou mais'
+};
+
+var MAPA_DURACAO = {
+  'Até 2 horas':                '2 horas',
+  'Meio período (3 a 4 horas)': 'Meio período',
+  'Dia inteiro':                'Dia inteiro'
+};
+
+document.getElementById('form-orcamento').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var f = e.target;
+  var erro = document.getElementById('erro');
+  erro.textContent = '';
+  erro.style.color = ''; // reseta cor caso já tenha usado
+
+  if (f.empresa_site.value) return; // anti-spam
+
+  // --- Coleta ---
+  var nome     = f.nome.value.trim();
+  var email    = f.email.value.trim();
+  var tel      = f.telefone.value.trim();
+  var cidade   = f.cidade.value.trim();
+  var data     = f.data.value;
+  var pessoas  = (f.querySelector('input[name=pessoas]:checked') || {}).value;
+  var duracao  = (f.querySelector('input[name=duracao]:checked') || {}).value;
+  var servicos = Array.prototype.map.call(
+    f.querySelectorAll('input[name=servicos]:checked'),
+    function (i) { return i.value; }
+  );
+
+  // --- Validação ---
+  if (!nome || !email || !tel || !cidade) { erro.textContent = 'Preencha nome, email, telefone e cidade.'; return; }
+  if (!/^\S+@\S+\.\S+$/.test(email))       { erro.textContent = 'Informe um email válido.'; return; }
+  if (tel.replace(/\D/g, '').length < 10)   { erro.textContent = 'Informe um telefone com DDD.'; return; }
+  if (!servicos.length)                     { erro.textContent = 'Escolha pelo menos um serviço.'; return; }
+  if (!pessoas)                             { erro.textContent = 'Selecione a quantidade de pessoas.'; return; }
+  if (!data)                                { erro.textContent = 'Informe a data e a hora do evento.'; return; }
+
+  var dt = new Date(data);
+  var dataFmt = dt.toLocaleDateString('pt-BR') + ' às ' +
+                dt.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+
+  // Telefone no formato internacional +55...
+  var telIntl = '+55' + tel.replace(/\D/g, '');
+
+  // --- 1) Envia para o Mailchimp (fire-and-forget) ---
+  var fd = new FormData();
+  fd.append('EMAIL',    email);
+  fd.append('FNAME',    nome);
+  fd.append('PHONE',    telIntl);
+  fd.append('LOCAL',    cidade);
+  fd.append('MMERGE2',  duracao || '');                       // Duracao (texto)
+  fd.append('MMERGE6',  MAPA_DURACAO[duracao] || duracao || ''); // Tempo (radio)
+  fd.append('MMERGE7',  MAPA_PESSOAS[pessoas] || pessoas || ''); // Publico (radio)
+  fd.append('MMERGE8',  f.tema.value.trim());                 // Tema
+  fd.append('MMERGE9',  f.obs.value.trim());                  // Obs
+  fd.append('MMERGE10', servicos.join(', '));                 // Servicos (novo)
+  fd.append('MMERGE5',  dataFmt);                             // Data (texto)
+  fd.append('b_f157af6dee86a498a2a97fa19_075a266628', '');    // honeypot
+
+  fetch(MC_ENDPOINT, { method: 'POST', body: fd, mode: 'no-cors' })
+    .catch(function () { /* no-cors não retorna corpo; ignore */ });
+
+  // --- 2) Abre o WhatsApp com o pedido formatado ---
+  var linhas = [
+    '*Pedido de orçamento - Tudo Festas*',
+    '',
+    '*Nome/Organização:* ' + nome,
+    '*Email:* ' + email,
+    '*Telefone/WhatsApp:* ' + tel,
+    '*Cidade:* ' + cidade,
+    '*Serviços:* ' + servicos.join(', '),
+    '*Pessoas:* ' + pessoas
+  ];
+  if (duracao) linhas.push('*Duração:* ' + duracao);
+  linhas.push('*Data e hora:* ' + dataFmt);
+  if (f.tema.value.trim()) linhas.push('*Tema/Tipo:* ' + f.tema.value.trim());
+  if (f.obs.value.trim())  linhas.push('*Observações:* ' + f.obs.value.trim());
+
+  window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(linhas.join('\n')), '_blank');
+
+  erro.style.color = '#c8ffd4';
+  erro.textContent = 'Enviado! Abrindo WhatsApp…';
+});
+</script>
+
+
+</body>
+
+</html>
